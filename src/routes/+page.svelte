@@ -64,12 +64,12 @@
 
 <div class="flex flex-col pt-4 w-full px-8 items-center gap-2">
 	<div>
-		<h1 class="text-2xl font-bold w-full text-center">Ikyy Chat-BOT</h1>
-		<p class="text-sm italic">Powered by gpt-3.5-turbo</p>
+		<h1 class="text-2xl font-bold w-full text-center">IKYY CHAT BOT</h1>
+		<p class="text-sm italic">Powered By IkyyOFC</p>
 	</div>
 	<div class="h-[500px] w-full bg-gray-900 rounded-md p-4 overflow-y-auto flex flex-col gap-4">
 		<div class="flex flex-col gap-2">
-			<ChatMessage type="assistant" message="Halo, tanyakan apa pun yang ingin anda tanyakan !" />
+			<ChatMessage type="assistant" message="Halo, saya ikyy tanyakan apa saja yang ingin kamu tanyakan !" />
 			{#each chatMessages as message}
 				<ChatMessage type={message.role} message={message.content} />
 			{/each}
