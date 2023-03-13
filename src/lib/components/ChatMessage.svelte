@@ -8,13 +8,13 @@
 	<div class="chat-image avatar">
 		<div class="w-10 rounded-full">
 			<img
-				src="https://ui-avatars.com/api/?name={type === 'user' ? 'Me' : 'B'}"
+				src="https://telegra.ph/file/{type === 'user' ? '6bffde36f1bbcf94f6b42.jpg' : 'ce72a789d7fee93959e58.jpg'}"
 				alt="{type} avatar"
 			/>
 		</div>
 	</div>
 	<div class="chat-header">
-		{type === 'user' ? 'Me' : 'Bot'}
+		{type === 'user' ? 'Kamu' : 'Bot'}
 	</div>
 	<div class="chat-bubble {type === 'user' ? 'chat-bubble-primary' : 'chat-bubble-secondary'}">
 		{message}
