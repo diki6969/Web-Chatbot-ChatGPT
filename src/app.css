@@ -5,10 +5,10 @@
 
 html,
 body {
-	@apply h-full;
+  height: 100%;
 }
 
 body {
   background-color: #2A303C;
-  color: #F9FAFB;
+  color: #2A303C;
 }
