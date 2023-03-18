@@ -7,3 +7,8 @@ html,
 body {
 	@apply h-full;
 }
+
+body {
+  background-color: #2A303C;
+  color: #F9FAFB;
+}
