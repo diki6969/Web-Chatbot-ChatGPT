@@ -7,3 +7,6 @@ html,
 body {
 	@apply h-full;
 }
+.chat-header {
+        @apply text-white;
+}
