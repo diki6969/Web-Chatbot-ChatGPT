@@ -3,10 +3,20 @@
 @tailwind components;
 @tailwind utilities;
 
-html,
+/* Menjadikan background merata sampai ke bawah */
+html, 
 body {
   height: 100%;
+  margin: 0;
 }
+
+/* Menghilangkan perbatasan pada input ketika aktif */
+input:focus {
+  outline: none;
+  border-color: #d1d5db;
+  box-shadow: none;
+}
+
 
 body {
   background-color: #2A303C;
