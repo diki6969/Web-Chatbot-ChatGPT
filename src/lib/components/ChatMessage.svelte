@@ -8,7 +8,7 @@
 	<div class="chat-image avatar">
 		<div class="w-10 rounded-full">
 			<img
-				src="https://telegra.ph/file/{type === 'user' ? '6bffde36f1bbcf94f6b42.jpg' : 'ce72a789d7fee93959e58.jpg'}"
+				src="https://telegra.ph/file/{type === 'user' ? 'd50e5008e0f3753717faa.png' : 'ce72a789d7fee93959e58.jpg'}"
 				alt="{type} avatar"
 			/>
 		</div>
