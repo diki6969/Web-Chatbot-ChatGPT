@@ -4,7 +4,6 @@ import type { RequestHandler } from './$types'
 import { getTokens } from '$lib/tokenizer'
 import { json } from '@sveltejs/kit'
 import type { Config } from '@sveltejs/adapter-vercel'
-import fetch from 'node-fetch';
 
 export const config: Config = {
 	runtime: 'edge'
