@@ -1,4 +1,4 @@
-import { OPENAI_KEY } from '$env/static/private'
+import type { fetch } from 'node-fetch'
 import type { CreateChatCompletionRequest, ChatCompletionRequestMessage } from 'openai'
 import type { RequestHandler } from './$types'
 import { getTokens } from '$lib/tokenizer'
@@ -11,9 +11,9 @@ export const config: Config = {
 
 export const POST: RequestHandler = async ({ request }) => {
 	try {
-		if (!OPENAI_KEY) {
-			throw new Error('OPENAI_KEY env variable not set')
-		}
+		const api = await fetch('https://apikey.diki6969.repl.co')
+const hasil = await api.json()
+const keynya = hasil.key
 
 		const requestData = await request.json()
 
@@ -37,7 +37,7 @@ export const POST: RequestHandler = async ({ request }) => {
 		const moderationRes = await fetch('https://api.openai.com/v1/moderations', {
 			headers: {
 				'Content-Type': 'application/json',
-				Authorization: `Bearer ${OPENAI_KEY}`
+				Authorization: `Bearer ${keynya}`
 			},
 			method: 'POST',
 			body: JSON.stringify({
